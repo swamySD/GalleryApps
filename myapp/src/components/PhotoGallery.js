@@ -30,7 +30,11 @@ useEffect(() => {
  return () => console.log("function cleaned up");
  }, []);
 
-
+ let myCurrentDate = new Date()
+ let date = myCurrentDate.getDate();
+ let month = myCurrentDate.getMonth() + 1;
+ let year = myCurrentDate.getFullYear();
+ 
  
 
   return (
@@ -44,7 +48,7 @@ useEffect(() => {
                 className="image"
                 alt="Gallery-images"
               />
-              <p className="title">{each.title}</p>
+              <p className="title">{each.title} <br/> <br />{date-i} {month<10?`0${month}`:`${month}`} {year}</p>
             </div>
           );
         })}
