@@ -22,11 +22,6 @@ const PhotoGallery = () => {
   
 };
 
-
-
-
-
-
 useEffect(() => {
  
   if (shouldlog.current) {
@@ -52,8 +47,7 @@ let date=new Date()
 
     {show.image&&
     <>
-
-<Modal
+  <Modal
         show={show}
         onHide={() => setShow(false)}
         dialogClassName="modal-90w"
@@ -68,9 +62,7 @@ let date=new Date()
           <img src={show.image} alt="" className="modalImage"/>
         </Modal.Body>
       </Modal>
-
-
-    </>
+  </>
     }
 
      <div className="Gallery-container">
