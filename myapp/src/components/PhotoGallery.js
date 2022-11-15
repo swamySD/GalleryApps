@@ -55,8 +55,7 @@ let date=new Date()
       >
         <Modal.Header closeButton>
           <Modal.Title id="example-custom-modal-styling-title">
-           
-          </Modal.Title>
+           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <img src={show.image} alt="" className="modalImage"/>
@@ -81,7 +80,7 @@ let date=new Date()
               </div>
               <div className="container-2">
               <p className="title">{each.title}</p>
-              <p className="title">{`${date.getDate()}-${date.getMonth()}-${date.getFullYear()}`}</p>
+              <p className="title">{`${date.getDate()-i}-${date.getMonth()}-${date.getFullYear()}`}</p>
             </div>
             </div>
           );
