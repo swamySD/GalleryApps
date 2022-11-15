@@ -110,3 +110,10 @@
     }
 }
 
+.image-container img{
+    transition: all 1s ease;
+}
+.image-container:hover img{
+    transform: scale(1.5);
+}
+
