@@ -34,6 +34,7 @@ useEffect(() => {
  
 
   return (
+    <>
     <div className="container">
      <div className="Gallery-container">
         {result.map((each, i) => {
@@ -50,6 +51,8 @@ useEffect(() => {
         })}
       </div>
     </div>
+    <h1>Hello good morning</h1>
+    </>
   );
 };
 
